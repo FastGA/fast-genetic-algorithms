@@ -1,6 +1,29 @@
+"""
+Implementation of the different mutation operators.
+
+BaseMutationOperator is an abstract class that sports the basic methods to perform the bitwise mutation of a bit string,
+OnePlusOneMutationOperator is an implementation of the classical (1+1) EA,
+FastMutationOperator is an implementation of our operator.
+
+The inheritance scheme is
+
+    BaseMutationOperator
+        |- OnePlusOneMutationOperator
+        |- FastMutationOperator
+
+and a sample usage is :
+
+    oneplusone = OnePlusOneMutationOperator(n=100)
+    fast = FastMutationOperator(n=100, beta=1.5)
+
+"""
+
 from numpy import linspace
-from utils import flip, wrong_param_error
-from sampling import sample, sample_waiting_time
+from fastga.utils import flip, wrong_param_error
+from fastga.sampling import sample, sample_waiting_time
+
+
+__all__ = ["BaseMutationOperator", "OnePlusOneMutationOperator", "FastMutationOperator"]
 
 
 class BaseMutationOperator:

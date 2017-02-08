@@ -1,6 +1,10 @@
 from numpy import log1p
 from numpy.random import rand
 
+
+__all__ = ["sample", "sample_waiting_time"]
+
+
 def sample(cdf):
     """
     Samples a random positive bounded integer according to the Cumulative Distribution Function
