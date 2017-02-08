@@ -1,6 +1,6 @@
-This repository holds the code base supporting an article submitted to the [GECCO 2017](http://gecco-2017.sigevo.org/index.html/HomePage, "GECCO 2017") conference. Since the article is still being reviewed, the authors identity [cannot be disclosed](http://gecco-2017.sigevo.org/index.html/Call+for+Papers#Double-Blind_Review_Process) for the moment. It will be as soon as the reviewing process is over. In the meantime, this repository will be maintained actively by the authors, however using an anonymous account.
+This repository holds the code base supporting an article submitted to the [GECCO 2017](http://gecco-2017.sigevo.org/index.html/HomePage "GECCO 2017") conference. Since the article is still being reviewed, the authors' identities [cannot be disclosed](http://gecco-2017.sigevo.org/index.html/Call+for+Papers#Double-Blind_Review_Process) for the moment. They will be as soon as the reviewing process is over. In the meantime, this repository will be maintained actively by the authors, however using an anonymous account.
 
-**fastga** is an extremely small module sporting our so-called *fast mutation operator* (or *heavy-tailed mutation operator*), which is designed to perform bitwise mutation using a power-law-distributed mutation rate. This allows a high number of bits to be flipped in one step with comparatively high probability, which is especially desirable when such long-distance "jumps" are necessary to escape local optima...
+**fastga** is an extremely small module sporting our so-called *fast mutation operator* (or *heavy-tailed mutation operator*), which is designed to perform bitwise mutation using a power-law-distributed mutation rate. This allows a high number of bits to be flipped in one step with high probability (compared to the classical (1+1) EA for example), which is especially desirable when such long-distance "jumps" are necessary to escape local optima...
 
 Requirements
 ============
@@ -11,12 +11,14 @@ Requirements
 Installation
 ============
 
+In a console, type
+
     pip install fastga
 
 Usage
 =====
 
-Our mutation operator is implemented in the class **FastMutationOperator**.
+Our mutation operator is implemented in the class **FastMutationOperator**. In a python shell, type
 
     from fastga import FastMutationOperator
 
