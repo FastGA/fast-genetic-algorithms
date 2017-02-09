@@ -3,7 +3,7 @@
  
 from setuptools import setup, find_packages
  
-__version__ = '1.0'
+__version__ = '1.0.0'
 
 min_numpy_ver = '1.7.0'
 
@@ -11,10 +11,12 @@ setup(
  
     name='fastga',
     version=__version__,
+
+    author='The FastGA team',
+
+    license="Unlicense",
  
     packages=find_packages(),
- 
-    author="",
  
     description="Implementation of the so-called Heavy-Tailed Mutation Operator",
  
