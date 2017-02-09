@@ -7,5 +7,5 @@ along with a few utility functions and the classical (1+1) EA.
 
 __version__ = '1.0'
 
-from operators import *
+from fastga.operators import *
 
