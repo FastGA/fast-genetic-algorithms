@@ -50,7 +50,8 @@ class BaseMutationOperator:
         """
         n = self.n
         mutation_rate = self.get_mutation_rate()
-        index = sample_waiting_time(mutation_rate)
+        index = sample_waiting_time(mutation_rate) - 1  # We need to subtract 1 to get a chance
+        # to mutate the first index.
         while index < n:
             flip(bit_string, index)
             index += sample_waiting_time(mutation_rate)
