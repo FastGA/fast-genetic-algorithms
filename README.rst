@@ -1,8 +1,4 @@
-This repository holds the code base supporting the article "Fast genetic
- algorithms" by Benjamin Doerr, Huu Phuoc Le, Régis Makhmara, and Ta Duy
- Nguyen. The conference version of this work is accepted for publication
- in the proceedings of GECCO 2017. An extended version can be found on 
-the ArXiV at https://arxiv.org/abs/1703.03334.
+This repository holds the code base supporting the article "Fast genetic  algorithms" by Benjamin Doerr, Huu Phuoc Le, Régis Makhmara, and Ta Duy  Nguyen. The conference version of this work is accepted for publication in the proceedings of GECCO 2017. An extended version can be found on the ArXiV at https://arxiv.org/abs/1703.03334.
 
 **fastga** is an extremely small module sporting our so-called *fast mutation operator* (or *heavy-tailed mutation operator*), which is designed to perform bitwise mutation using a power-law-distributed mutation rate. This allows a high number of bits to be flipped in one step with high probability (compared to the classical (1+1) EA for example), which is especially desirable when such long-distance "jumps" are necessary to escape local optima.
 
